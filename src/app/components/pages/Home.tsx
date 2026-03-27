@@ -20,7 +20,7 @@ export default function Home() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { events, selectedCategory, searchQuery } = useSelector((state: RootState) => state.events);
-  const user = useSelector((state: RootState) => state.auth.user);
+  const user = useSelector((state: RootState) => state.user);
   const messages = useSelector((state: RootState) => state.chat.messages);
   
   // Count total unread messages from all events

@@ -43,10 +43,15 @@ export default function EventDetails() {
   const event = allEvents.find(e => e.id === id);
 
   useEffect(() => {
-    if (allEvents.length > 0) {
+    if (event) {
       setLoading(false);
+    } else {
+      const timeout = setTimeout(() => {
+        setLoading(false);
+      }, 3000); // 3s timeout
+      return () => clearTimeout(timeout);
     }
-  }, [allEvents.length]);
+  }, [event, id]);
 
   if (!id) {
     return <div className="flex items-center justify-center min-h-screen bg-white"><p className="text-gray-500">Invalid event link</p></div>;
