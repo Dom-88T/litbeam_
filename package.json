@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "litbeam-monorepo-root",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd LitBeam && npm install && npm run build",
+    "dev": "cd LitBeam && npm run dev"
+  }
+}
