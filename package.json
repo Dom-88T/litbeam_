@@ -3,7 +3,7 @@
   "name": "litbeam-monorepo-root",
   "version": "1.0.0",
   "scripts": {
-    "build": "cd LitBeam && npm install && npm run build",
-    "dev": "cd LitBeam && npm run dev"
+    "build": "npm --prefix LitBeam install && npm --prefix LitBeam run build",
+    "dev": "npm --prefix LitBeam run dev"
   }
 }

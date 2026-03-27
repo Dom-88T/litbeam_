@@ -2,9 +2,9 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
+      "src": "LitBeam/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "LitBeam/dist" }
+      "config": { "distDir": "dist" }
     }
   ],
   "routes": [
