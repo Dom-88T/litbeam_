@@ -69,9 +69,7 @@ export default function Signup() {
         email: formData.email,
         password: formData.password,
         options: {
-          redirectTo: window.location.origin + '/home'
-        },
-        options: {
+          redirectTo: window.location.origin + '/home',
           data: {
             name: formData.name,
             neighborhood: formData.neighborhood,
