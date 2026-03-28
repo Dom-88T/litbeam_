@@ -64,20 +64,20 @@ export default function Home() {
                   />
                 )}
               </motion.button>
-
-              {/* Profile Avatar */}
-              <div className="w-12 h-12 rounded-full bg-[#9FE870]/20 flex items-center justify-center">
-                {user ? (
-                  <img
-                    src={user.avatar}
-                    alt={user.name}
-                    className="w-11 h-11 rounded-full object-cover"
-                  />
-                ) : (
-                  <Zap className="w-6 h-6 text-[#9FE870]" />
-                )}
-              </div>
             </div>
+          </div>
+
+          {/* Profile Avatar - Moved to Right Side */}
+          <div className="w-12 h-12 rounded-full bg-[#9FE870]/20 flex items-center justify-center">
+            {user ? (
+              <img
+                src={user.avatar}
+                alt={user.name}
+                className="w-11 h-11 rounded-full object-cover"
+              />
+            ) : (
+              <Zap className="w-6 h-6 text-[#9FE870]" />
+            )}
           </div>
         </div>
 
